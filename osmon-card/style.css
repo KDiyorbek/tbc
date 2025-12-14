@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #303030;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    color: #ffffff;
+    background: linear-gradient(to right, #008899, #005858);
+}
+
+h4 {
+    color: #f9f9f9;
+    text-align: center;
+    margin-top: 0;
+}
+
+.card > button, a {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    position: absolute;
+    top: 3px;
+    right: 7px;
+}
+
+.topup-amount {
+    color: #ffb0b0;
+}
+
+.limit {
+    color: #b0d4d4;
+}
+
+.card-image {
+    position: absolute;
+    top: 35px;
+    right: 5px;
+    border-radius: 10px;
+    height: 100px;
+    width: 35%;
+    display: block;
+    margin: 0;
+}
+
+.info {
+    color: #909090;
+    text-align: center;
+}
+
+.btn > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00d8d8;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    width: 90%;
+    margin: 1px auto;
+    font-weight: bold;
+}
+
+.hr-with-text {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+.hr-with-text hr {
+  flex: 1;
+  border: none;
+  height: 1px;
+  background: #ccc;
+  margin: 0;
+}
+.hr-with-text span {
+  white-space: nowrap;
+  margin: 0 0.5rem;
+  font-weight: 500;
+}
