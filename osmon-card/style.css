@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/nmp/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
 * {
     box-sizing: border-box;
 }
@@ -89,4 +91,25 @@ h4 {
   white-space: nowrap;
   margin: 0 0.5rem;
   font-weight: 500;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.2em;
+    align-items: center;
+}
+.actions > button {
+    text-align: center;
+    color: white;
+    background-color: #404040;
+    width: 95%;
+    border-radius: 10px;
+}
+span {
+    float: left;
+}
+q {
+    color: darkslategray;
 }
