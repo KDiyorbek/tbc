@@ -28,30 +28,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const holdDuration = 3000;
   
   lastTwoButtons.forEach(button => {
-    button.addEventListener('mousedown', function() {
+    button.addEventListener('mousedown', startHold);
+    button.addEventListener('mouseup', endHold);
+    button.addEventListener('mouseleave', endHold);
+    button.addEventListener('touchstart', startHold);
+    button.addEventListener('touchend', endHold);
+    button.addEventListener('touchcancel', endHold);
+    
+    function startHold() {
       isHolding = true;
       holdTimer = setTimeout(() => {
         if (isHolding) {
           const buttonText = button.textContent.trim();
           
           if (buttonText.includes('Kartani yangilash')) {
-            alert('Karta yangilandi!');
+            alert('Yangi karta tayyorlanmoqda...');
             location.reload();
           } else if (buttonText.includes('Kartani yopish')) {
-            alert('Karta yopildi!');
+            alert('Karta muvaffaqiyatli yopildi.');
           }
         }
       }, holdDuration);
-    });
+    }
     
-    button.addEventListener('mouseup', function() {
+    function endHold() {
       isHolding = false;
       clearTimeout(holdTimer);
-    });
-    
-    button.addEventListener('mouseleave', function() {
-      isHolding = false;
-      clearTimeout(holdTimer);
-    });
+    }
   });
 });
