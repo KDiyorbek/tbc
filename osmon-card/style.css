@@ -20,7 +20,7 @@ html, body {
 }
 
 h4 {
-    color: #f9f9f9;
+    color: #c9c9c9;
     text-align: center;
     margin-top: 0;
 }
@@ -37,7 +37,7 @@ h4 {
 }
 
 .topup-amount {
-    color: #ffb0b0;
+    color: #ff6060;
 }
 
 .limit {
@@ -46,11 +46,11 @@ h4 {
 
 .card-image {
     position: absolute;
-    top: 35px;
+    top: 40px;
     right: 5px;
     border-radius: 10px;
-    height: 100px;
-    width: 35%;
+    height: 97px;
+    width: 40%;
     display: block;
     margin: 0;
 }
@@ -65,12 +65,12 @@ h4 {
     align-items: center;
     justify-content: center;
     background-color: #00d8d8;
-    color: black;
+    color: #000000;
     border: none;
     border-radius: 5px;
     height: 30px;
     width: 90%;
-    margin: 1px auto;
+    margin: 0.1px auto;
     font-weight: bold;
 }
 
@@ -84,7 +84,7 @@ h4 {
   flex: 1;
   border: none;
   height: 1px;
-  background: #ccc;
+  background: #cccccc;
   margin: 0;
 }
 .hr-with-text span {
@@ -102,14 +102,24 @@ h4 {
 }
 .actions > button {
     text-align: center;
-    color: white;
+    color: #ffffff;
     background-color: #404040;
-    width: 95%;
+    height: 30px;
+    width: 96%;
     border-radius: 10px;
+    border: solid 0.1px #00ffff11;
 }
 span {
     float: left;
 }
 q {
-    color: darkslategray;
+    color: #2f4f4f;
+    font-size: 11px;
+}
+mark {
+    color: currentColor;
+    background-color: transparent;
+}
+mark:hover {
+    color: #ff0000;
 }
