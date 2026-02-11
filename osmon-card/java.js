@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   let holdTimer = null;
   let isHolding = false;
-  const holdDuration = 3000;
+  const holdDuration = 1500;
   
   lastTwoButtons.forEach(button => {
     button.addEventListener('mousedown', startHold);
